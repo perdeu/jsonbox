@@ -1,0 +1,17 @@
+
+INSERT INTO countries(id_country, country) VALUES (1, 'Brazil');
+INSERT INTO countries(id_country, country) VALUES (2, 'USA');
+INSERT INTO countries(id_country, country) VALUES (3, 'Canada');
+
+
+
+
+INSERT INTO cities (id_city, country, city) VALUES (1, 1, 'Curitiba');
+INSERT INTO cities (id_city, country, city) VALUES (3, 1, 'Rio de Janeiro');
+INSERT INTO cities (id_city, country, city) VALUES (4, 3, 'Quebec');
+INSERT INTO cities (id_city, country, city) VALUES (5, 3, 'Montreal');
+INSERT INTO cities (id_city, country, city) VALUES (2, 1, 'São Paulo');
+INSERT INTO cities (id_city, country, city) VALUES (6, 2, 'Miame');
+INSERT INTO cities (id_city, country, city) VALUES (7, 2, 'LA');
+INSERT INTO cities (id_city, country, city) VALUES (8, 2, 'New York');
+INSERT INTO cities (id_city, country, city) VALUES (9, 2, 'Las vegas');

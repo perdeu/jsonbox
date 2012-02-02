@@ -1,0 +1,38 @@
+CREATE TABLE cities
+(
+  id_city serial NOT NULL,
+  country integer,
+  city character varying,
+  CONSTRAINT cities_pkey PRIMARY KEY (id_city ),
+  CONSTRAINT cities_country_fkey FOREIGN KEY (country)
+      REFERENCES countries (id_country) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+);
+
+CREATE SEQUENCE cities_id_city_seq
+  INCREMENT 1
+  MINVALUE 1
+  MAXVALUE 9223372036854775807
+  START 5
+  CACHE 1;
+ALTER TABLE cities_id_city_seq
+  OWNER TO postgres;
+  
+--
+
+
+CREATE TABLE countries
+(
+  id_country serial NOT NULL,
+  country character varying,
+  CONSTRAINT countries_pkey PRIMARY KEY (id_country )
+);
+
+CREATE SEQUENCE countries_id_country_seq
+  INCREMENT 1
+  MINVALUE 1
+  MAXVALUE 9223372036854775807
+  START 3
+  CACHE 1;
+ALTER TABLE countries_id_country_seq
+  OWNER TO postgres;
